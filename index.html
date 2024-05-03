@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+
+                container: {
+                    padding: {
+                        DEFAULT: '1rem',
+                        sm: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem',
+                    },
+                },
+
+                extend: {
+                    colors: {
+                        secondary: '#43AC0A',
+                        primary: '#da373d'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .bg-footer {
+            background-image: url(footer.jpg);
+        }
+
+        .bg-footer::after {
+            content: '';
+            background-color: rgb(6 16 67 / 55%);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 40;
+        }
+
+        .bg-home {
+            background-image: url(fon.png);
+        }
+
+        .bg-home::after {
+            content: '';
+            background-color: rgb(6 16 67 / 55%);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 40;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="z-index: 200;" class="nabar w-full absolute z-50 top-0 left-0 border-b border-white border-opacity-20">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between w-full py-5">
+
+                <div class="flex">
+                    <span class="font-bold text-white uppercase">Dveri-ast.kz</span>
+                    <ul class="lg:flex text-white items-center text-[14px] uppercase hidden ml-5">
+                        <li class="px-5">главная</li>
+                        <li class="px-5">о нас</li>
+                        <li class="px-5">Сертификат</li>
+                        <li class="px-5">контакты</li>
+
+                    </ul>
+                </div>
+
+                <div class="flex items-center">
+                    <a class="lg:block hidden text-white mr-3 font-bold" href="">+77761604911</a>
+                    <a class="bg-secondary px-5 py-2 rounded-lg uppercase text-[14px] text-white tracking-wide font-bold"
+                        href="https://wa.link/ekrq5o">Мы в whatsapp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-home bg-no-repeat bg-center bg-cover">
+        <div class="container mx-auto">
+            <div class="h-screen flex items-center justify-between w-full">
+                <div class="relative z-50">
+                    <h1 class="lg:text-[32px] text-[24px] font-bold text-white uppercase">Установка и ремонт -
+                        регулировка дверей
+                        межкомнатных ! Качественно !
+                    </h1>
+                    <p class="my-10 text-white lg:text-[24px]">Поможем выполнить Качественный ремонт
+                        дверей<br>Заказывайте услугу прямо сейчас!</p>
+                    <a class="px-5 py-2 bg-secondary rounded-full font-bold uppercase text-white" href="">Связаться с
+                        нами</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-20">
+        <div class="container mx-auto">
+            <h3 class="uppercase lg:text-[32px] text-[24px] font-bold py-5">Наши услуги</h3>
+            <div class="grid lg:grid-cols-4 gap-4">
+                <div class="bg-blue-500 p-5 rounded-lg bg-opacity-50 w-full flex flex-col">
+                    <div class="flex items-center py-5">
+
+                        <span class="font-bold uppercase text-gray-800">Замер<br> дверного проёма</span>
+                    </div>
+
+                    <a class="px-5 w-full py-2 bg-secondary rounded-full font-bold uppercase text-white text-center" href="">Связаться с
+                        нами</a>
+
+                </div>
+
+                <div class="bg-blue-500 p-5 rounded-lg bg-opacity-50 w-full flex flex-col">
+                    <div class="flex items-center py-5">
+
+                        <span class="font-bold uppercase text-gray-800">Установка<br> входной двери</span>
+                    </div>
+
+                    <a class="px-5 w-full py-2 bg-secondary rounded-full font-bold uppercase text-white text-center" href="">Связаться с
+                        нами</a>
+                </div>
+
+                <div class="bg-blue-500 p-5 rounded-lg bg-opacity-50 w-full flex flex-col">
+                    <div class="flex items-center py-5">
+
+                        <span class="font-bold uppercase text-gray-800">Установка межкомнатной дверной арки</span>
+                    </div>
+
+                    <a class="px-5 w-full py-2 bg-secondary rounded-full font-bold uppercase text-white text-center" href="">Связаться с
+                        нами</a>
+                </div>
+
+                <div class="bg-blue-500 p-5 rounded-lg bg-opacity-50 w-full flex flex-col">
+                    <div class="flex items-center py-5">
+
+                        <span class="font-bold uppercase text-gray-800">Установка межкомнатной двустворчатой двери
+                            </span>
+                    </div>
+
+                    <a class="px-5 w-full py-2 bg-secondary rounded-full font-bold uppercase text-white text-center" href="">Связаться с
+                        нами</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-10">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 gap-4">
+                <div class="flex w-full items-center justify-center">
+                    <img class="lg:w-1/2" src="about.png" alt="">
+                </div>
+                <div class="px-5">
+                    <h3 class="uppercase text-[35px] font-bold">УСТАНОВКА ДВЕРЕЙ</h3>
+                    <div class="bg-secondary w-[50px] h-[5px] my-5"></div>
+                    <p class="text-[16px] text-gray-700">Правильная профессиональная установка межкомнатных дверей в
+                        квартиру под ключ играет важную роль в удобстве их использования и существенно продлевает срок
+                        службы. Поэтому не стоит снисходительно относиться и доверять ее неопытным специалистам. С
+                        другой стороны, если обратиться к опытному мастеру, то цена может быть довольно высокой.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="relative">
+        <div class="bg-footer bg-cover bg-center bg-no-repeat ">
+            <div class="container mx-auto">
+
+                <div class="flex h-[700px] items-start justify-center flex-col relative z-50">
+                    <h1 class="text-white uppercase lg:text-[48px] text-[24px]">Хотите задать вопрос<br>
+                        специалисту?</h1>
+                    <p class="text-white py-5 text-[18px] uppercase">
+                        Наши специалисты с удовольствием проконсультируют вас
+                        и дадут рекомендации</p>
+                    <a href="https://wa.link/ekrq5o"
+                        class="bg-secondary px-5 py-2 rounded-lg uppercase text-[14px] text-white tracking-wide font-bold">Бесплатная
+                        консультация</a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="absolute bg-black py-5 border-white w-full bottom-0 left-0 z-50">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-center">
+                    <p class="mr-2 text-white uppercase font-bold">Сделано в</p>
+                    <img class="w-[90px]" src="http://mediaway.kz/themes/the_cms/assets/img/logo.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
